@@ -28,40 +28,81 @@ return array(
 				'type' => 'number',
 				'default' => 0
 			),
+			'eyebrow' => array(
+				'type' => 'string',
+				'default' => 'It’s not how much time you spend in a place, but how much you give to it.'
+			),
+			'badge' => array(
+				'type' => 'string',
+				'default' => '25 Dec 2022'
+			),
 			'title' => array(
 				'type' => 'string',
-				'default' => 'Titre accrocheur'
+				'default' => 'Welcome! Let’s plan your dream trip!'
 			),
 			'subtitle' => array(
 				'type' => 'string',
-				'default' => 'Sous-titre descriptif pour contextualiser votre offre.'
+				'default' => 'Design the perfect adventure with us.'
 			),
 			'textColor' => array(
 				'type' => 'string',
 				'default' => '#ffffff'
 			),
-			'overlayColor' => array(
+			'primaryCtaLabel' => array(
 				'type' => 'string',
-				'default' => '#000000'
+				'default' => 'Contact Us'
 			),
-			'overlayOpacity' => array(
-				'type' => 'number',
-				'default' => 0.45
-			),
-			'alignment' => array(
+			'primaryCtaUrl' => array(
 				'type' => 'string',
-				'default' => 'center'
+				'default' => '#'
 			),
-			'ctas' => array(
+			'cardTitle' => array(
+				'type' => 'string',
+				'default' => 'Let’s help you with a custom-made trip'
+			),
+			'cardHighlights' => array(
+				'type' => 'array',
+				'default' => array(
+					'Get great offers with exclusive travel deals',
+					'Trip consultation for your next destination'
+				)
+			),
+			'cardDescription' => array(
+				'type' => 'string',
+				'default' => 'Tell us your ultimate goals and ask us anything in between your adventure routes.'
+			),
+			'aboutTitle' => array(
+				'type' => 'string',
+				'default' => 'About us'
+			),
+			'aboutText' => array(
+				'type' => 'string',
+				'default' => 'A travel agency with hard work'
+			),
+			'socials' => array(
 				'type' => 'array',
 				'default' => array(
 					array(
-						'label' => 'En savoir plus',
-						'url' => '#',
-						'icon' => 'arrow-right-alt2',
-						'variant' => 'primary'
+						'label' => 'Facebook',
+						'url' => '#'
+					),
+					array(
+						'label' => 'WhatsApp',
+						'url' => '#'
+					),
+					array(
+						'label' => 'Instagram',
+						'url' => '#'
 					)
 				)
+			),
+			'secondaryCtaLabel' => array(
+				'type' => 'string',
+				'default' => 'Start your journey'
+			),
+			'secondaryCtaUrl' => array(
+				'type' => 'string',
+				'default' => '#journey'
 			)
 		),
 		'supports' => array(

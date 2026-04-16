@@ -2,23 +2,6 @@
 	box-sizing: border-box;
 }
 
-.berger-header__inner {
-	position: relative;
-	z-index: 1;
-}
-
-.berger-header__content .components-base-control__field {
-	margin: 0;
-}
-
-.berger-header__cta {
-	position: relative;
-}
-
-.berger-header__cta .components-button {
-	margin-top: 6px;
-}
-
 .berger-header__cta-settings {
 	padding: 12px;
 	border: 1px solid #e0e0e0;
@@ -27,4 +10,12 @@
 	gap: 8px;
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+.berger-header__control-group {
+	margin-top: 12px;
+}
+
+.berger-header__social-icon .components-icon {
+	margin: 0;
 }
