@@ -1,0 +1,28 @@
+{
+	"name": "header-block",
+	"version": "0.1.0",
+	"description": "Bloc d'en-tête personnalisable avec image, overlay et CTA.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --blocks-manifest",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --blocks-manifest"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "latest",
+		"@wordpress/blocks": "latest",
+		"@wordpress/components": "^32.6.0",
+		"@wordpress/i18n": "latest",
+		"@wordpress/icons": "^12.2.0",
+		"classnames": "^2.5.1"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^32.0.0"
+	}
+}

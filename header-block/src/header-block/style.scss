@@ -1,0 +1,124 @@
+.wp-block-berger-header-block {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: clamp(48px, 8vw, 128px);
+	min-height: 340px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 22px 60px rgba(0, 0, 0, 0.25);
+}
+
+.berger-header__inner {
+	width: 100%;
+}
+
+.berger-header__content {
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.berger-header--left .berger-header__content {
+	text-align: left;
+	align-items: flex-start;
+}
+
+.berger-header--center .berger-header__content {
+	text-align: center;
+	align-items: center;
+	margin-inline: auto;
+}
+
+.berger-header--right .berger-header__content {
+	text-align: right;
+	align-items: flex-end;
+	margin-left: auto;
+}
+
+.berger-header__title {
+	font-size: clamp(36px, 5vw, 62px);
+	line-height: 1.08;
+	margin: 0;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.berger-header__subtitle {
+	font-size: clamp(16px, 2vw, 20px);
+	line-height: 1.6;
+	margin: 0;
+	max-width: 720px;
+	color: inherit;
+	opacity: 0.9;
+}
+
+.berger-header__ctas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 18px;
+}
+
+.berger-header__cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 18px;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 600;
+	border: 1px solid rgba(255, 255, 255, 0.32);
+	background: rgba(255, 255, 255, 0.14);
+	color: inherit;
+	transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+}
+
+.berger-header__cta:hover,
+.berger-header__cta:focus-visible {
+	transform: translateY(-1px);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.berger-header__cta--ghost {
+	background: transparent;
+	border-color: currentcolor;
+}
+
+.berger-header__cta--icon {
+	width: 46px;
+	height: 46px;
+	justify-content: center;
+	padding: 0;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.18);
+}
+
+.berger-header__cta-icon {
+	font-size: 18px;
+}
+
+.berger-header__cta-label {
+	display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+
+	.wp-block-berger-header-block {
+		padding: 36px 24px;
+		min-height: 300px;
+		border-radius: 14px;
+	}
+
+	.berger-header__title {
+		font-size: clamp(28px, 7vw, 40px);
+	}
+
+	.berger-header__subtitle {
+		max-width: none;
+	}
+}

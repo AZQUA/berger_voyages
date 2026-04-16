@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "berger/header-block",
+  "version": "0.1.0",
+  "title": "Header",
+  "category": "design",
+  "icon": "align-wide",
+  "description": "En-tête personnalisable avec image, textes et appels à l'action.",
+  "keywords": [
+    "hero",
+    "cover",
+    "cta"
+  ],
+  "attributes": {
+    "backgroundUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundId": {
+      "type": "number",
+      "default": 0
+    },
+    "title": {
+      "type": "string",
+      "default": "Titre accrocheur"
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "Sous-titre descriptif pour contextualiser votre offre."
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "overlayColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 0.45
+    },
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "ctas": {
+      "type": "array",
+      "default": [
+        {
+          "label": "En savoir plus",
+          "url": "#",
+          "icon": "arrow-right-alt2",
+          "variant": "primary"
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "textdomain": "header-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
